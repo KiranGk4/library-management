@@ -4,5 +4,7 @@
 .body{
     margin: auto;
     text-align: center;
-    width: max-content;
+    /* width: max-content; */
+    width: 60%;
 }
+

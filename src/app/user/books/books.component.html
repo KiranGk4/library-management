@@ -1,10 +1,10 @@
 <div class="header">
     <ul class="nav nav-tabs">
         <li class="nav-item">
-            <a href="#" class="nav-link">Home</a>
+            <a href="/userHome/:id" class="nav-link">Home</a>
         </li>
         <li class="nav-item">
-            <a href="#" class="nav-link active">Books</a>
+            <a href="/userBooks" class="nav-link active">Books</a>
         </li>
         <li class="nav-item">
             <a href="#" class="nav-link">Books Taken</a>
@@ -16,15 +16,29 @@
 </div>
 
 <div class="body">
+    <div style="position: right; width: 25%; margin-bottom: 10px;">
+        <input type="text" id="search" name="search" class="form-control" [(ngModel)]="booksFilter" placeholder="Search">
+    </div>
     <table class="table table-striped">
         <thead>
             <tr>
+                <!-- <th>#</th> -->
                 <th>ID</th>
                 <th>Book Name</th>
                 <th>Author</th>
                 <th>Category</th>
-                <th>Action</th>
+                <th>Published Year</th>
             </tr>
         </thead>
+        <tbody>
+            <tr *ngFor="let book of booksFiltered">
+                <!-- <td>{{ count }}</td> -->
+                <td>{{ book.bookId }}</td>
+                <td>{{ book.bookName }}</td>
+                <td>{{ book.author }}</td>
+                <td>{{ book.category }}</td>
+                <td>{{ book.yearPublished }}</td>
+            </tr>
+        </tbody>
     </table>
 </div>

@@ -1,6 +1,6 @@
 [
     {
-        "id" : "b1",
+        "bookId" : "b1",
         "bookName" : "Adventures of Tom Sawyer",
         "author" : "Mark Twain",
         "copies" : 2,
@@ -10,7 +10,7 @@
     },
 
     {
-        "id" : "b2",
+        "bookId" : "b2",
         "bookName" : "Alice in Wonderland",
         "author" : "Lewis Carrol",
         "copies" : 3,
@@ -19,7 +19,7 @@
         "category" : "story"
     },
     {
-        "id" : "b3",
+        "bookId" : "b3",
         "bookName" : "Ancient Mariner",
         "author" : "Coleridge",
         "copies" : 2,

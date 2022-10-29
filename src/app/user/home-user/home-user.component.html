@@ -4,7 +4,7 @@
             <a href="#" class="nav-link active">Home</a>
         </li>
         <li class="nav-item">
-            <a href="#" class="nav-link">Books</a>
+            <a routerLink="/userBooks" class="nav-link">Books</a>
         </li>
         <li class="nav-item">
             <a href="#" class="nav-link">Books Taken</a>
@@ -17,6 +17,6 @@
 </div>
 
 <div style="text-align: center;">
-    <h1>Hi {{ userDetail[0].username }}, Welcome to Library</h1>
+    <h1>Hi {{ userDetail[0].username | uppercase }}, Welcome to Library</h1>
     
 </div>

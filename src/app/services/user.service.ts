@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/internal/Observable';
+import { BookDetails } from '../interfaces/BookDetails';
 import { UserDetails } from '../interfaces/UserDetails';
 
 @Injectable({
@@ -9,10 +10,14 @@ import { UserDetails } from '../interfaces/UserDetails';
 export class UserService {
 
   userDetailsUrl = 'assets/json_files/user_details.json';
+  bookDetailsUrl = 'assets/json_files/books.json';
   constructor(private http : HttpClient) { }
 
   getUsernamePassword(): Observable<UserDetails[]>{
     return this.http.get<UserDetails[]>(this.userDetailsUrl);
   }
 
+  getBooks(): Observable<BookDetails[]>{
+    return this.http.get<BookDetails[]>(this.bookDetailsUrl)
+  }
 }

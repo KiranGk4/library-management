@@ -8,7 +8,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterUserComponent } from './user/register-user/register-user.component';
 import { HomeUserComponent } from './user/home-user/home-user.component';
 import { BooksComponent } from './user/books/books.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,7 +22,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
