@@ -12,6 +12,8 @@ import { UserService } from '../services/user.service';
 export class LoginComponent implements OnInit {
 
   pageTitle = "Login";
+  loginUnsuccessful : boolean = false;
+  
   loginForm = new FormGroup({
     username : new FormControl(''),
     password : new FormControl('')
@@ -34,11 +36,14 @@ export class LoginComponent implements OnInit {
     {
       if((i.username == this.loginForm.value.username) && (i.password == this.loginForm.value.password))
       {
+        this.loginUnsuccessful = false;
+        sessionStorage.setItem('userId',String(i.id));
         console.log('Success');
-        this.route.navigate(['/userHome/'+i.id]);
+        this.route.navigate(['/userHome']);
       }
       else
       {
+        this.loginUnsuccessful = true;
         console.log('Invalid');
       }
     }

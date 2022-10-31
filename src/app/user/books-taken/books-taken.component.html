@@ -1,13 +1,14 @@
+
 <div class="header">
     <ul class="nav nav-tabs">
         <li class="nav-item">
             <a routerLink="/userHome" class="nav-link">Home</a>
         </li>
         <li class="nav-item">
-            <a routerLink="/userBooks" class="nav-link active">Books</a>
+            <a routerLink="/userBooks" class="nav-link">Books</a>
         </li>
         <li class="nav-item">
-            <a routerLink="/booksTaken" class="nav-link">Books Taken</a>
+            <a routerLink="/booksTaken" class="nav-link active">Books Taken</a>
         </li>
         <li class="nav-item" style="justify-content: right;">
             <a href="#" class="nav-link">Logout</a>
@@ -16,9 +17,6 @@
 </div>
 
 <div class="body">
-    <div style="position: right; width: 25%; margin-bottom: 10px;">
-        <input type="text" id="search" name="search" class="form-control" [(ngModel)]="booksFilter" placeholder="Search">
-    </div>
     <table class="table table-striped">
         <thead>
             <tr>
@@ -31,7 +29,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let book of booksFiltered">
+            <tr *ngFor="let book of bookDetail">
                 <!-- <td>{{ count }}</td> -->
                 <td>{{ book.bookId }}</td>
                 <td>{{ book.bookName }}</td>

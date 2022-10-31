@@ -9,3 +9,9 @@
 .form-group{
     padding: 5px;
 }
+
+p{
+    color: red;
+    text-align: center;
+    margin: 5px;
+}

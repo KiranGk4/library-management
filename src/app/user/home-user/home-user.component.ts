@@ -14,7 +14,8 @@ export class HomeUserComponent implements OnInit {
   constructor(private userService : UserService, private activatedRoute : ActivatedRoute) { }
 
   ngOnInit(): void {
-    const id = Number(this.activatedRoute.snapshot.paramMap.get('id'));
+    //const id = Number(this.activatedRoute.snapshot.paramMap.get('id'));
+    const id = Number(sessionStorage.getItem('userId'));
     this.userService.getUsernamePassword().subscribe(
       (userDetail : UserDetails[])=>{
         this.userDetail = userDetail.filter((obj)=>obj.id == id)

@@ -1,0 +1,59 @@
+[
+    {
+        "id" : 1,
+        "books" : [
+            {
+                "bookId" : "b1",
+                "bookName" : "Adventures of Tom Sawyer",
+                "author" : "Mark Twain",
+                "copies" : 2,
+                "dateAdded" : "10/12/2022",
+                "yearPublished" : 2020,
+                "category" : "story"
+            },
+        
+            {
+                "bookId" : "b2",
+                "bookName" : "Alice in Wonderland",
+                "author" : "Lewis Carrol",
+                "copies" : 3,
+                "dateAdded" : "10/12/2022",
+                "yearPublished" : 2000,
+                "category" : "story"
+            }
+        ]
+    },
+    {
+        "id" : 2,
+        "books" : [
+            {
+                "bookId" : "b1",
+                "bookName" : "Adventures of Tom Sawyer",
+                "author" : "Mark Twain",
+                "copies" : 2,
+                "dateAdded" : "10/12/2022",
+                "yearPublished" : 2020,
+                "category" : "story"
+            },
+        
+            {
+                "bookId" : "b2",
+                "bookName" : "Alice in Wonderland",
+                "author" : "Lewis Carrol",
+                "copies" : 3,
+                "dateAdded" : "10/12/2022",
+                "yearPublished" : 2000,
+                "category" : "story"
+            },
+            {
+                "bookId" : "b3",
+                "bookName" : "Ancient Mariner",
+                "author" : "Coleridge",
+                "copies" : 2,
+                "dateAdded" : "10/10/2010",
+                "yearPublished" : 2005,
+                "category" : "drama"
+            }
+        ]
+    }
+]
